@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #cdf;
+      }
+      .box.small {
+        scale: 0.5;
+      }
+      .box.moved {
+        translate: 50px;
+      }
+      .box:hover {
+        animation: rotate 500ms infinite alternate;
+      }
+      @keyframes rotate {
+        0% {
+          rotate: 0;
+        }
+        100% {
+          rotate: 90deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    动画效果:kingsley
+    <div class="box small moved"></div>
+  </body>
+</html>
